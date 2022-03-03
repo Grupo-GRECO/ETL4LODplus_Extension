@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="copy-files-to-kettle"  >
 <target name="copy-files-to-kettle">
-  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\LoadTripleFile\etc\*.[png,xml,properties] to C:/Users/jok19/Downloads/data-integration/plugins/steps/LoadTripleFile"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\LoadTripleFile\etc\*.[png,xml,properties] to C:/Users/jok19/Downloads/data-integration/plugins/steps/LoadTripleFile"/>
   <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/LoadTripleFile" overwrite="true">
-    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\LoadTripleFile/etc"/>
+    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\LoadTripleFile/etc"/>
   </copy>
-  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\LoadTripleFile\lib\*.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/LoadTripleFile"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\LoadTripleFile\lib\*.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/LoadTripleFile"/>
   <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/LoadTripleFile/lib" overwrite="true">
-    <fileset includes="**/*.jar" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\LoadTripleFile\target/lib"/>
+    <fileset includes="**/*.jar" dir="C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\LoadTripleFile\target/lib"/>
   </copy>
-  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\LoadTripleFile\repo_config\*.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/LoadTripleFile/lib"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\LoadTripleFile\repo_config\*.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/LoadTripleFile/lib"/>
   <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/LoadTripleFile/lib" overwrite="true">
-    <fileset includes="**/*.jar,**/*.ttl" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\LoadTripleFile/repo_config"/>
+    <fileset includes="**/*.jar,**/*.ttl" dir="C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\LoadTripleFile/repo_config"/>
   </copy>
-  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\LoadTripleFile\target\LoadTripleFile-1.1.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/LoadTripleFile"/>
-  <copy file="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\LoadTripleFile\target/LoadTripleFile-1.1.jar" tofile="C:/Users/jok19/Downloads/data-integration/plugins/steps/LoadTripleFile/LoadTripleFile.jar" overwrite="true"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\LoadTripleFile\target\LoadTripleFile-1.1.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/LoadTripleFile"/>
+  <copy file="C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\LoadTripleFile\target/LoadTripleFile-1.1.jar" tofile="C:/Users/jok19/Downloads/data-integration/plugins/steps/LoadTripleFile/LoadTripleFile.jar" overwrite="true"/>
   <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/LoadTripleFile" value="3.7.1" token="{rdf4j.version}">
     <include name="plugin.xml"/>
   </replace>

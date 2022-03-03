@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="copy-files-to-kettle"  >
 <target name="copy-files-to-kettle">
-  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\DataPropertyMapping\etc\*.[png,xml,properties] to C:/Users/jok19/Downloads/data-integration/plugins/steps/DataPropertyMapping"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\DataPropertyMapping\etc\*.[png,xml,properties] to C:/Users/jok19/Downloads/data-integration/plugins/steps/DataPropertyMapping"/>
   <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/DataPropertyMapping" overwrite="true">
-    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\DataPropertyMapping/etc"/>
+    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\DataPropertyMapping/etc"/>
   </copy>
-  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\DataPropertyMapping\libs\*.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/DataPropertyMapping"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\DataPropertyMapping\libs\*.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/DataPropertyMapping"/>
   <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/DataPropertyMapping/lib" overwrite="true">
-    <fileset includes="**/*.jar" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\DataPropertyMapping\target/lib"/>
+    <fileset includes="**/*.jar" dir="C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\DataPropertyMapping\target/lib"/>
   </copy>
-  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\DataPropertyMapping\target\DataPropertyMapping-1.1.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/DataPropertyMapping"/>
-  <copy file="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\DataPropertyMapping\target/DataPropertyMapping-1.1.jar" tofile="C:/Users/jok19/Downloads/data-integration/plugins/steps/DataPropertyMapping/DataPropertyMapping.jar" overwrite="true"/>
-  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/DataPropertyMapping" value="1.4.18" token="{xstream.version}">
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\DataPropertyMapping\target\DataPropertyMapping-1.1.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/DataPropertyMapping"/>
+  <copy file="C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\DataPropertyMapping\target/DataPropertyMapping-1.1.jar" tofile="C:/Users/jok19/Downloads/data-integration/plugins/steps/DataPropertyMapping/DataPropertyMapping.jar" overwrite="true"/>
+  <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/DataPropertyMapping" value="1.4.10" token="{xstream.version}">
     <include name="plugin.xml"/>
   </replace>
   <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/DataPropertyMapping" value="1.1.3.1" token="{xmlpull.version}">

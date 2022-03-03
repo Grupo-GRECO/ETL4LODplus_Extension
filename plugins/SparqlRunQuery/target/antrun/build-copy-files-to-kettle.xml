@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="copy-files-to-kettle"  >
 <target name="copy-files-to-kettle">
-  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\SparqlRunQuery\etc\*.[png,xml,properties] to C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlRunQuery"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\SparqlRunQuery\etc\*.[png,xml,properties] to C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlRunQuery"/>
   <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlRunQuery" overwrite="true">
-    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\SparqlRunQuery/etc"/>
+    <fileset includes="**/*.png,**/*.xml,**/*.properties" dir="C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\SparqlRunQuery/etc"/>
   </copy>
-  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\SparqlRunQuery\libs\*.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlRunQuery"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\SparqlRunQuery\libs\*.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlRunQuery"/>
   <copy todir="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlRunQuery/lib" overwrite="true">
-    <fileset includes="**/*.jar" dir="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\SparqlRunQuery\target/lib"/>
+    <fileset includes="**/*.jar" dir="C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\SparqlRunQuery\target/lib"/>
   </copy>
-  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\SparqlRunQuery\target\SparqlRunQuery-1.1.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlRunQuery"/>
-  <copy file="C:\Users\jok19\OneDrive\Documents\GitHub\ETL4FAIR\plugins\SparqlRunQuery\target/SparqlRunQuery-1.1.jar" tofile="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlRunQuery/SparqlRunQuery.jar" overwrite="true"/>
+  <echo message="Copying C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\SparqlRunQuery\target\SparqlRunQuery-1.1.jar to C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlRunQuery"/>
+  <copy file="C:\Users\jok19\OneDrive\Documents\GitHub\GRECO\plugins\SparqlRunQuery\target/SparqlRunQuery-1.1.jar" tofile="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlRunQuery/SparqlRunQuery.jar" overwrite="true"/>
   <replace dir="C:/Users/jok19/Downloads/data-integration/plugins/steps/SparqlRunQuery" value="3.17.0" token="{apache.jena.version}">
     <include name="plugin.xml"/>
   </replace>
