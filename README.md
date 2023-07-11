@@ -1,7 +1,7 @@
 ![](img/logo_big.png)
 
 
-ETL4LOD+FAIR é uma extensão do Kettle baseada no [ETL4LOD+](https://github.com/johncurcio/ETL4LODPlus/releases) para trabalhar com Linked Open Data, integrando com o GraphDB e FAIR Datapoints.
+ETL4LOD+Extension é uma extensão do Kettle baseada no [ETL4LOD+](https://github.com/johncurcio/ETL4LODPlus/releases) para trabalhar com Linked Open Data, integrando com o GraphDB e FAIR Datapoints.
 
 ## Usando o Projeto
 
