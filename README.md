@@ -1,4 +1,4 @@
-![](img/logo_ETL4LODEXTENSION.png)
+![](img/logo_ETL4LODEXTENSION.png=250x250)
 
 
 ETL4LOD+Extension é uma extensão do Kettle baseada no [ETL4LOD+](https://github.com/johncurcio/ETL4LODPlus/releases) para trabalhar com Linked Open Data, integrando com o GraphDB e FAIR Datapoints.
